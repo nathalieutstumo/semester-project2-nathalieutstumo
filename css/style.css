@@ -1,0 +1,149 @@
+main {
+  width: 100%;
+}
+
+.navbar {
+  z-index: 11;
+  background-color: transparent !important;
+}
+
+.hero__img {
+  height: 350px;
+  z-index: 1;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  margin-top: -250px;
+  position: relative;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.hero__product {
+  z-index: 15;
+  position: absolute;
+  margin-top: -340px;
+  margin-left: 125px;
+}
+
+.hero__display {
+  width: 425px;
+}
+
+.hero__content {
+  position: absolute;
+  z-index: 10;
+  margin-left: 800px;
+  margin-top: -25px;
+}
+
+.hero__content h1 {
+  font-family: "Squada One", cursive;
+  font-size: 10rem;
+  margin-top: -325px;
+  margin-bottom: -15px;
+  margin-left: -50px;
+}
+
+.hero__content .h1__col {
+  color: #fd79a8;
+}
+
+.hero__content p {
+  font-size: 1.25rem;
+}
+
+.hero--p__firstline {
+  margin-left: -45px;
+  width: 650px;
+}
+
+.hero--p__secondline {
+  width: 550px;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+
+.text__alignment-hero {
+  margin-left: 60px;
+}
+
+.last__hero-text {
+  margin-left: 95px;
+}
+
+.btn-primary {
+  background-color: #fd79a8;
+  width: 225px;
+  height: 65px;
+  margin-left: 270px;
+  margin-top: 50px;
+  border-radius: 50px;
+  border-color: #fd79a8;
+  border-width: 1px;
+}
+
+.btn-primary p {
+  font-family: "Squada One", cursive;
+  font-size: 2.5rem;
+  margin-top: -4px;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #fd79a8;
+  border-color: #fd79a8;
+  border-width: 2px;
+}
+
+.btn-primary p:hover {
+  margin-top: -5px;
+}
+
+.fa-long-arrow-alt-down {
+  font-size: 1rem;
+}
+
+.navbar-brand {
+  font-family: "Squada One", cursive;
+  font-size: 2.5rem;
+  margin-left: 25px;
+}
+
+.nav__logo {
+  color: #fd79a8;
+}
+
+.featured-products__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 380px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featured-products__container h2 {
+  font-family: "Squada One", cursive;
+  font-size: 4rem;
+}
+
+.featured-products__container h2 span {
+  font-family: "Squada One", cursive;
+  font-size: 4rem;
+  color: #fd79a8;
+}
+
+.featured-products__card {
+  width: 500px;
+  border-color: #fd79a8;
+  border-width: 3px;
+}
+
+.featured__products {
+  margin-top: 400px;
+}
+/*# sourceMappingURL=style.css.map */
