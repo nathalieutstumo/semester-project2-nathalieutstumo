@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featuredimgs",
+  "info": {
+    "singularName": "featuredimg",
+    "pluralName": "featuredimgs",
+    "displayName": "featuredimg"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imgurl": {
+      "type": "string"
+    }
+  }
+}
