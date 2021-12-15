@@ -19,16 +19,16 @@
               <a class="navbar-brand" href="index.html">Al<span class="nav__logo">o</span>e Skin</a>
               <ul class="nav justify-content-end">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" id="current" href="index.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="products.html">Products</a>
+                  <a class="nav-link" id="current" href="products.html">Products</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="cart.html">Cart</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="login.html">Login</a>
+                  <a class="nav-link" href="login.html">Log in</a>
                 </li>
               </ul>
             </div>
@@ -39,46 +39,29 @@
     </header>
 
     <main>
-      <div class="row align-items-center">
-        <div class="col1">
-         
-            <div class="hero"></div>
-            <div class="hero__img"> <div class="hero__product"></div></div>
-        </div>
-        <div class="col2">
           
-        </div>
-        <div class="col3">
-          <div class="hero__content">
-            <h1>Al<span class="h1__col">o</span>e Skin</h1>
-            <div class="hero--p__firstline"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget tellus eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
-            <div class="hero--p__secondline"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="text__alignment-hero">Maecenas eget tellus eros. Lorem ipsum dolor sit</span> <span class="last__hero-text">amet, consectetur adipiscing elit.</span></p></div>
-            
-            <a class="hero__btn" href="products.html" role="button"><p>Shop now</p></a>
+        <div class="products__headline">
+            <h2>All <span>Products</span></h2>
           </div>
-        </div>
-      </div>
-       <div class="row align-items-end">
-
-        <div class="featured__headline">
-          <h2>Featured <span>Products</span></h2>
-        </div>
-
-      <div class="featured-products__container">
-        <div class="featured__products"></div>
-      </div>
+          <form class="d-flex">
+            <input class="form-control me-2" id="searchBar" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        <div class="all__products" id="productList"></div>
       
    </main>
 
-    <footer>
+   <footer>
 
-<div class="footer__logo">
-
-</div>
-    </footer>
+    <div class="footer__logo">
     
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </div>
+        </footer>
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+    <script src="js/components/alert.js"></script>
+    <script src="js/index.js"></script> -->
+    <script type="module" src="js/products.js"></script>
 </body>
 </html>

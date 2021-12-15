@@ -1,0 +1,16 @@
+.details__main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.post {
+  height: 600px;
+}
+
+.post h1 {
+  font-family: $header-font;
+  color: $main-brand-col;
+  font-size: 4rem;
+}

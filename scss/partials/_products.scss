@@ -1,0 +1,53 @@
+.products__headline {
+  display: flex;
+  justify-content: center;
+}
+
+.products__headline span {
+  font-family: $header-font;
+  font-size: 4rem;
+  color: $main-brand-col;
+  margin-left: 15px;
+}
+
+.products__headline h2 {
+  font-family: $header-font;
+  font-size: 4rem;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.all-products__card {
+  width: 350px;
+  border: $main-brand-col 3px solid;
+  border-radius: 50px;
+  height: 500px;
+  margin: 10px;
+}
+
+.all__products {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.all__products img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.all__products h2 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.all__products p {
+  position: relative;
+  text-align: center;
+}

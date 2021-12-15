@@ -1,5 +1,5 @@
 main {
-  width: 100%;
+  width: 99%;
 }
 
 .navbar {
@@ -7,25 +7,37 @@ main {
   background-color: transparent !important;
 }
 
+.navbar li a {
+  color: black;
+  font-weight: 300;
+  font-family: "Squada One", cursive;
+  font-size: 1.5rem;
+}
+
+nav #current {
+  font-weight: 500;
+  color: #fd79a8;
+}
+
+.navbar li a:hover {
+  color: #fd79a8;
+}
+
 .hero__img {
-  height: 350px;
-  z-index: 1;
+  height: 360px;
   width: 100%;
+  margin-top: -200px;
 }
 
 .hero {
-  width: 100%;
-  margin-top: -250px;
-  position: relative;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  width: 101%;
 }
 
 .hero__product {
   z-index: 15;
   position: absolute;
-  margin-top: -340px;
-  margin-left: 125px;
+  margin-top: 225px;
+  margin-left: 160px;
 }
 
 .hero__display {
@@ -33,48 +45,56 @@ main {
 }
 
 .hero__content {
-  position: absolute;
-  z-index: 10;
-  margin-left: 800px;
-  margin-top: -25px;
+  position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: -100px;
 }
 
 .hero__content h1 {
   font-family: "Squada One", cursive;
   font-size: 10rem;
-  margin-top: -325px;
-  margin-bottom: -15px;
-  margin-left: -50px;
+  margin-right: 125px;
 }
 
 .hero__content .h1__col {
   color: #fd79a8;
 }
 
+.col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .hero__content p {
   font-size: 1.25rem;
+  width: 500px;
 }
 
 .hero--p__firstline {
-  margin-left: -45px;
-  width: 650px;
+  margin-top: -10px;
+  margin-left: 50px;
 }
 
 .hero--p__secondline {
-  width: 550px;
-  margin-left: 35px;
-  margin-top: 30px;
+  width: 200px;
+  margin-left: 115px;
 }
 
 .text__alignment-hero {
-  margin-left: 60px;
+  margin-left: 55px;
 }
 
 .last__hero-text {
-  margin-left: 95px;
+  margin-left: 90px;
 }
 
-.btn-primary {
+.hero__btn {
   background-color: #fd79a8;
   width: 225px;
   height: 65px;
@@ -83,23 +103,33 @@ main {
   border-radius: 50px;
   border-color: #fd79a8;
   border-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  color: white;
 }
 
-.btn-primary p {
+.hero__btn p {
   font-family: "Squada One", cursive;
   font-size: 2.5rem;
-  margin-top: -4px;
 }
 
-.btn-primary:hover {
+.hero__btn:hover {
   background-color: white;
   color: #fd79a8;
-  border-color: #fd79a8;
-  border-width: 2px;
+  border: #fd79a8 2px solid;
 }
 
-.btn-primary p:hover {
-  margin-top: -5px;
+.hero__btn p:hover {
+  margin-top: -2px;
+}
+
+.hero__btn:focus {
+  background-color: white;
+  color: #fd79a8;
+  border: #fd79a8 2px solid;
 }
 
 .fa-long-arrow-alt-down {
@@ -117,33 +147,272 @@ main {
 }
 
 .featured-products__container {
+  margin-top: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 380px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 400px;
+}
+
+.featured__headline h2 {
+  font-family: "Squada One", cursive;
+  font-size: 4rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.featured__headline {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 220px;
+}
+
+.featured__headline h2 span {
+  font-family: "Squada One", cursive;
+  font-size: 4rem;
+  color: #fd79a8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.featured-products__card {
+  width: 350px;
+  border: #fd79a8 3px solid;
+  border-radius: 50px;
+  height: 500px;
+  margin: 15px;
+  margin-top: -225px;
+}
+
+.featured__products {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.featured__products h2 {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.featured-products__container h2 {
-  font-family: "Squada One", cursive;
-  font-size: 4rem;
+.featured__products p {
+  text-align: center;
 }
 
-.featured-products__container h2 span {
+.featured-products__card img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.align-items-end {
+  width: 100%;
+}
+
+.shop_btn a {
+  background-color: #fd79a8;
+  width: 175px;
+  height: 45px;
+  border-radius: 50px;
+  border-color: #fd79a8;
+  border-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4px;
+  font-family: "Squada One", cursive;
+  font-size: 1.5rem;
+}
+
+.shop_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__logo img {
+  width: 250px;
+  margin-top: -15px;
+}
+
+footer {
+  border: #fd79a8 3px solid;
+  width: 100%;
+}
+
+.footer__links li a {
+  color: black;
+  font-weight: 300;
+  font-family: "Squada One", cursive;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.footer__links li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.footer__container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.products__headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products__headline span {
   font-family: "Squada One", cursive;
   font-size: 4rem;
   color: #fd79a8;
+  margin-left: 15px;
 }
 
-.featured-products__card {
-  width: 500px;
-  border-color: #fd79a8;
-  border-width: 3px;
+.products__headline h2 {
+  font-family: "Squada One", cursive;
+  font-size: 4rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
-.featured__products {
-  margin-top: 400px;
+.all-products__card {
+  width: 350px;
+  border: #fd79a8 3px solid;
+  border-radius: 50px;
+  height: 500px;
+  margin: 10px;
+}
+
+.all__products {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.all__products img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.all__products h2 {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.all__products p {
+  position: relative;
+  text-align: center;
+}
+
+.details__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.post {
+  height: 600px;
+}
+
+.post h1 {
+  font-family: "Squada One", cursive;
+  color: #fd79a8;
+  font-size: 4rem;
+}
+
+.cart__headline {
+  color: #fd79a8;
+}
+
+.container {
+  margin-bottom: 73px;
+}
+
+.col-sm-12 h1 {
+  font-family: "Squada One", cursive;
+  color: #fd79a8;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,27 +1,29 @@
 async function getMeData() {
-    const response = await fetch('http://localhost:1337/heroimgs/1');
+    const response = await fetch('https://sem-project-api.herokuapp.com/api/featuredimgs/1');
     const data = await response.json();
+    const result = data.data;
    
 	// console.log('All results from data', jsonArray);
-// console.log(data)
-   
-        document.querySelector('.hero__img').innerHTML += `
-        <img class ="hero" src="${data.imgurl}">
-        `
-    }
+// console.log(result)
+
+document.querySelector('.hero__img').innerHTML += `
+<img class ="hero" src="${result.attributes.imgurl}">
+`
+}
 
 
 getMeData();
 
 
 async function getHeroProduct() {
-    const response = await fetch('http://localhost:1337/products/4/');
+    const response = await fetch('https://sem-project-api.herokuapp.com/api/featuredimgs/2');
     const data = await response.json();
+    const result = data.data;
    
-console.log(data)
+// console.log(result)
    
         document.querySelector('.hero__product').innerHTML += `
-        <img class ="hero__display" src="${data.imgurl}">
+        <img class ="hero__display" src="${result.attributes.imgurl}">
         
         `
     }
@@ -30,27 +32,35 @@ console.log(data)
 getHeroProduct();
 
 async function getFeaturedProducts() {
-    const response = await fetch('http://localhost:1337/products/');
+    const response = await fetch('https://sem-project-api.herokuapp.com/api/products/');
     const data = await response.json();
-   
-console.log(data)
-if (data.featured === true) {
-    console.log(data.featured)
+    const result = data.data;
 
-    for (let i = 0; i < jsonArray.length; i++) {
+    
+    // const resultpath = result;
+console.log(result)
+
+
+      for (let i = 0; i < result.length; i++) {
+
+        if (result[i].attributes.featured === true) {
+            console.log(result[i].attributes.featured)
+
         document.querySelector('.featured__products').innerHTML += `
-        <div class="featured-products__card">
-        <h2>${data.title}</h2>
-        <p>${data.description}</p>
-        <div class="shop_btn">
-        <a href="details.html?id=${data.id}">Read More</a>
-        </div>
-        <p></p>
+          <div class="featured-products__card">
+          <div class="row align-items-center">
+    <div class="col">
+    <img class ="cardImg" src="${result[i].attributes.imgurl}"></img>
+    <h2>${result[i].attributes.title}</h2>
+    <p>${result[i].attributes.description}</p>
+    <div class="shop_btn">
+    <a href="details.html?id=${result[i].id}">Read More</a>
     </div>
+    </div>
+    </div>
+  <div class="row align-items-end">
         `;
       }
-
- 
 }
    
         
@@ -59,4 +69,35 @@ if (data.featured === true) {
 
 getFeaturedProducts();
 
-{/* <img class ="cardImg" src="${data.imgurl}"></img> */}
+
+async function getFooterLogo() {
+    const response = await fetch('https://sem-project-api.herokuapp.com/api/featuredimgs/3');
+    const data = await response.json();
+    const result = data.data;
+   
+	// console.log('All results from data', jsonArray);
+// console.log(result)
+
+document.querySelector('.footer__logo').innerHTML += `
+<img class ="logo" src="${result.attributes.imgurl}">
+<div class="footer__container">
+<ul class="footer__links">
+<li class="footer-item">
+  <a class="footer-link active" aria-current="page" href="#">About us</a>
+</li>
+<li class="footer-item">
+  <a class="footer-link" href="#">Shipping</a>
+</li>
+<li class="footer-item">
+  <a class="footer-link" href="#">Work with us</a>
+</li>
+<li class="footer-item">
+  <a class="footer-link" href="#">Frequently asked</a>
+</li>
+</ul>
+</div>
+`
+}
+
+
+getFooterLogo();
