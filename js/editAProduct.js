@@ -26,9 +26,9 @@ async function getSpecificCar() {
 
 getSpecificCar();
 
-form.onclick = async function (event) {
+form.onsubmit = async function (event) {
 	event.preventDefault();
-	let updatedCar = {
+	let updatedProduct = {
 		title: title.value,
 		description: description.value,
         price: price.value,
@@ -37,7 +37,7 @@ form.onclick = async function (event) {
 
 	const response = await axios.put(
 		`${BASE_URL}/${id}`,
-		updatedCar,
+		updatedProduct,
 		headers
 	);
 
