@@ -1,5 +1,6 @@
-import { getUser } from './localHelpers.js';
+import { getUser } from './localStorageHelper.js';
 
 if (getUser('jwt') === null) {
-	window.location.href = './login.html';
+  console.log('There is no JWT token');
+  window.location.href = './login.html';
 }
