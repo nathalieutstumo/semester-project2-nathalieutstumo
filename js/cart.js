@@ -13,8 +13,7 @@ if (localStorage.getItem('cart') === null) {
   cart_items.forEach(function(element) {
     document.querySelector('.cart__content').innerHTML +=
     '<li>' +
-    
-    element.image + element.title + ' - ' + element.price + ' NOK - Quantity: ' + element.quantity + ' <button class="delete" data-id="'+element.id+'">X</button> '
+    element.title + ' - ' + element.price + ' USD - Quantity: ' + element.quantity + ' <button class="delete" data-id="'+element.id+'">X</button> '
     '</li>';
     total = total + (element.price * element.quantity);
   })

@@ -282,3 +282,82 @@ footer {
 .footer__container {
   display: inline-flex;
 }
+
+@media (max-width: 1400px) {
+  .hero__product {
+    display: none;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .hero__content {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    width: 100%;
+    display: flex;
+  }
+
+  .hero__content h1 {
+    display: none;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  .hero__product {
+    display: none;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .hero__content p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: -270px;
+    width: 350px;
+  }
+
+  .hero--p__firstline {
+    margin-top: -20px;
+    margin-left: 0px;
+    // width: 650px;
+  }
+
+  .hero--p__secondline {
+    width: 00px;
+    margin-left: 0px;
+  }
+
+  .text__alignment-hero {
+    margin-left: 0px;
+  }
+
+  .last__hero-text {
+    margin-left: 0px;
+  }
+
+  .hero__btn {
+    display: none;
+  }
+
+  .featured__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    // flex-direction: column;
+  }
+
+  .featured-products__card {
+    margin-bottom: 250px;
+  }
+}
