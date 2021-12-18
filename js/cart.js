@@ -1,19 +1,3 @@
-// if (localStorage.getItem('cart') !== null) {
-//     var total = 0;
-//     var items = JSON.parse(localStorage.getItem('cart'));
-  
-//     items.forEach(function(element) {
-//       document.querySelector('.cart__content').innerHTML +=
-//       '<li>' +
-//         element.title + ' ' + element.price + 'NOK' + ' Quantity: ' + element.quantity
-//       '</li>';
-//       total = total + (element.price * element.quantity)
-//     })
-  
-//     document.querySelector('.cart__total').innerHTML = 'TOTAL :' + total + 'NOK';
-  
-//   }
-  
   var cart_items = [];
 
 if (localStorage.getItem('cart') === null) {
@@ -29,7 +13,8 @@ if (localStorage.getItem('cart') === null) {
   cart_items.forEach(function(element) {
     document.querySelector('.cart__content').innerHTML +=
     '<li>' +
-      element.title + ' - ' + element.price + ' NOK - Quantity: ' + element.quantity + ' <button class="delete" data-id="'+element.id+'">X</button> '
+    
+    element.image + element.title + ' - ' + element.price + ' NOK - Quantity: ' + element.quantity + ' <button class="delete" data-id="'+element.id+'">X</button> '
     '</li>';
     total = total + (element.price * element.quantity);
   })

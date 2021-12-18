@@ -7,6 +7,7 @@ const id = params.get('id');
 // Initialiser vars som skal brukes globalt
 var nr = 0;
 var tittel = '';
+var image = '';
 var pris = 0;
 var antall = 0
 
@@ -17,6 +18,7 @@ button.addEventListener('click', event => {
   var new_item = {
     "id" : nr,
     "title" : tittel,
+    "image" : image,
     "price" : pris,
     "quantity" : 1
   };
@@ -72,6 +74,7 @@ async function getPosts() {
         nr = result.id
         tittel = result.attributes.title;
         pris = result.attributes.price;
+        image = result.attributes.imgurl
 
         document.querySelector('main h1').innerHTML = result.attributes.title;
         document.querySelector('main img').src = result.attributes.imgurl;
