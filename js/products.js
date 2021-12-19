@@ -1,7 +1,7 @@
 
 import { filteringAnArray } from "./libs/filterArray.js";
 async function getAllProducts() {
-    const response = await fetch('https://sem-project-api.herokuapp.com/api/products/');
+    const response = await fetch('https://sem-project-strapi-nathalie.herokuapp.com/api/products');
     const data = await response.json();
     const result = data.data;
 

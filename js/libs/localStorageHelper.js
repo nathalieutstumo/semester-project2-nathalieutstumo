@@ -51,7 +51,7 @@
 // 	return localStorage.getItem(key);
 //   };
   
-  
+
 export const saveToLocalStorage = function (key, value) {
 	localStorage.setItem(key, JSON.stringify(value));
   };

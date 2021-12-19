@@ -132,10 +132,6 @@ nav #current {
   border: #fd79a8 2px solid;
 }
 
-.fa-long-arrow-alt-down {
-  font-size: 1rem;
-}
-
 .navbar-brand {
   font-family: "Squada One", cursive;
   font-size: 2.5rem;
@@ -307,71 +303,363 @@ footer {
 }
 
 @media (max-width: 1400px) {
-  .hero__product {
-    display: none;
-  }
-  .hero__img {
-    display: none;
+  .hero__img img {
+    margin-top: -50px;
   }
   .hero__content {
-    margin-top: 50px;
-  }
-}
-
-@media (max-width: 750px) {
-  main {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .hero__content h1 {
-    display: none;
-  }
-  main h1 {
-    font-size: 2rem;
-  }
-  .hero__product {
-    display: none;
-  }
-  .hero__img {
-    display: none;
+    margin-top: -165px;
   }
   .hero__content p {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: -270px;
+    margin-left: 50px;
+  }
+  .hero__content .hero__btn {
+    margin-left: 380px;
+  }
+  .hero__btn p {
+    margin-left: -5px;
+  }
+  .featured-products__card {
     width: 350px;
   }
-  .hero--p__firstline {
-    margin-top: -20px;
-    margin-left: 0px;
-  }
-  .hero--p__secondline {
-    width: 00px;
-    margin-left: 0px;
-  }
-  .text__alignment-hero {
-    margin-left: 0px;
-  }
-  .last__hero-text {
-    margin-left: 0px;
-  }
-  .hero__btn {
-    display: none;
-  }
-  .featured__products {
+  .featured-products__container {
+    margin-top: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 400px;
+  }
+  .featured__headline h2 {
+    font-family: "Squada One", cursive;
+    font-size: 4rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .featured__headline {
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 220px;
+  }
+  .featured__headline h2 span {
+    font-family: "Squada One", cursive;
+    font-size: 4rem;
+    color: #fd79a8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .featured-products__card {
+    width: 300px;
+    border: #fd79a8 3px solid;
+    border-radius: 50px;
+    height: 500px;
+    margin: 15px;
+    margin-top: -225px;
+  }
+  .featured__products {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-left: 25px;
+  }
+  .featured__products h2 {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .featured__products p {
+    text-align: center;
+    width: 275px;
+  }
+  .featured-products__card img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    border-radius: 50px;
+    width: 290px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1370px) {
+  .hero__product {
+    display: none;
+  }
+  .hero__content .hero--p__firstline p {
+    margin-left: 50px;
+    background-color: white;
+  }
+  .hero__content .hero--p__secondline p {
+    margin-left: 50px;
+    background-color: white;
+  }
+  .hero__content .hero__btn {
+    margin-left: 350px;
+    width: 200px;
+    margin-top: -5px;
+  }
+  .hero__btn p {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero__product {
+    display: none;
+  }
+  .hero__img {
+    margin-top: 5px;
+  }
+  .hero__content {
+    margin-top: -375px;
+  }
+  .hero__content .hero--p__firstline p {
+    margin-left: 50px;
+    background-color: white;
+  }
+  .hero__content .hero--p__secondline p {
+    margin-left: 50px;
+    background-color: white;
+  }
+  .hero__content .hero__btn {
+    margin-left: 190px;
+    width: 200px;
+  }
+  .hero__btn p {
+    margin-left: 5px;
+  }
   .featured-products__card {
-    margin-bottom: 250px;
+    width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  .featured-products__container {
+    margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+  }
+  .featured__headline h2 {
+    font-family: "Squada One", cursive;
+    font-size: 4rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-top: -180px;
+  }
+  .featured__products {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 600px;
+  }
+  .footer__logo img {
+    width: 250px;
+    margin-top: 0px;
+  }
+  footer {
+    border: #fd79a8 3px solid;
+    width: 100%;
+    margin-top: 900px;
+  }
+  .footer__links li a {
+    color: black;
+    font-weight: 300;
+    font-family: "Squada One", cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 20px;
+  }
+  .footer__links li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .footer__container {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero__content h1 {
+    display: none;
+  }
+  .hero__product {
+    display: none;
+  }
+  .hero__img {
+    margin-top: -30px;
+  }
+  .hero__content {
+    margin-top: -275px;
+    text-align: center;
+    margin-right: 100px;
+  }
+  .hero__content .hero--p__firstline p {
+    margin-left: 0px;
+    background-color: white;
+  }
+  .hero__content .hero--p__secondline p {
+    margin-left: 0px;
+    background-color: white;
+  }
+  .hero__content .hero__btn {
+    margin-left: 190px;
+    width: 200px;
+    margin-top: 15px;
+  }
+  .hero__btn p {
+    margin-left: 5px;
+  }
+  .featured-products__card {
+    width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  .featured-products__container {
+    margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+  }
+  .featured__headline h2 {
+    font-family: "Squada One", cursive;
+    font-size: 4rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-top: -180px;
+  }
+  .featured__products {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 600px;
+  }
+  .footer__logo img {
+    width: 250px;
+    margin-top: 0px;
+  }
+  footer {
+    border: #fd79a8 3px solid;
+    width: 100%;
+    margin-top: 900px;
+  }
+  .footer__links li a {
+    color: black;
+    font-weight: 300;
+    font-family: "Squada One", cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 20px;
+  }
+  .footer__links li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .footer__container {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 
@@ -401,6 +689,23 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.form-control {
+  border-color: #fd79a8;
+  width: 400px;
+  margin-left: 80px;
+}
+
+.d-flex .btn {
+  color: #fd79a8 !important;
+  border-color: #fd79a8;
+}
+
+.d-flex .btn:hover {
+  color: white !important;
+  border-color: white;
+  background-color: #fd79a8;
 }
 
 .all-products__card {
@@ -451,6 +756,24 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 1400px) {
+  .form-control {
+    width: 250px;
+    margin-left: 150px;
+    border-color: #fd79a8;
+  }
+  .d-flex .btn {
+    color: #fd79a8 !important;
+    border-color: #fd79a8;
+  }
+}
+
+@media (max-width: 750px) {
+  .all__products {
+    margin-bottom: -850px;
+  }
+}
+
 .details__main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,6 +793,13 @@ footer {
   font-family: "Squada One", cursive;
   color: #fd79a8;
   font-size: 4rem;
+}
+
+a.cart {
+  text-decoration: none;
+  color: #fd79a8;
+  font-size: 2rem;
+  font-family: "Squada One", cursive;
 }
 
 .cart__headline {

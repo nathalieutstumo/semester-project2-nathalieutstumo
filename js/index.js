@@ -1,5 +1,5 @@
 async function getMeData() {
-    const response = await fetch('https://sem-project-api.herokuapp.com/api/featuredimgs/1');
+    const response = await fetch('https://sem-project-strapi-nathalie.herokuapp.com/api/featuredimgs/1');
     const data = await response.json();
     const result = data.data;
    
@@ -16,7 +16,7 @@ getMeData();
 
 
 async function getHeroProduct() {
-    const response = await fetch('https://sem-project-api.herokuapp.com/api/featuredimgs/2');
+    const response = await fetch('https://sem-project-strapi-nathalie.herokuapp.com/api/featuredimgs/2');
     const data = await response.json();
     const result = data.data;
    
@@ -32,7 +32,7 @@ async function getHeroProduct() {
 getHeroProduct();
 
 async function getFeaturedProducts() {
-    const response = await fetch('https://sem-project-api.herokuapp.com/api/products/');
+    const response = await fetch('https://sem-project-strapi-nathalie.herokuapp.com/api/products');
     const data = await response.json();
     const result = data.data;
 

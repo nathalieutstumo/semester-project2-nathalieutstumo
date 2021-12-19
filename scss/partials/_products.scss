@@ -18,6 +18,24 @@
   text-align: center;
 }
 
+.form-control {
+  border-color: $main-brand-col;
+  width: 400px;
+  margin-left: 80px;
+}
+
+.d-flex .btn {
+  color: $main-brand-col !important;
+  border-color: $main-brand-col;
+  // background-color: $main-brand-col;
+}
+
+.d-flex .btn:hover {
+  color: white !important;
+  border-color: white;
+  background-color: $main-brand-col;
+}
+
 .all-products__card {
   width: 350px;
   border: $main-brand-col 3px solid;
@@ -50,4 +68,24 @@
 .all__products p {
   position: relative;
   text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .form-control {
+    width: 250px;
+    margin-left: 150px;
+    border-color: $main-brand-col;
+  }
+
+  .d-flex .btn {
+    color: $main-brand-col !important;
+    border-color: $main-brand-col;
+    // background-color: $main-brand-col;
+  }
+}
+
+@media (max-width: 750px) {
+  .all__products {
+    margin-bottom: -850px;
+  }
 }

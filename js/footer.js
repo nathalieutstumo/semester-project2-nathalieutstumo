@@ -1,6 +1,6 @@
 
 async function getFooterLogo() {
-    const response = await fetch('https://sem-project-api.herokuapp.com/api/featuredimgs/3');
+    const response = await fetch('https://sem-project-strapi-nathalie.herokuapp.com/api/featuredimgs/3');
     const data = await response.json();
     const result = data.data;
    
