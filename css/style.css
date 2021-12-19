@@ -550,6 +550,18 @@ footer {
   .hero__product {
     display: none;
   }
+  .hero--p__firstline {
+    display: none;
+  }
+  .hero--p__secondline {
+    display: none;
+  }
+  .hero__btn {
+    display: none;
+  }
+  .hero__product {
+    display: none;
+  }
   .hero__img {
     margin-top: -30px;
   }
