@@ -56,4 +56,4 @@ This is where you can leave your social links for people to contact you, such as
 
 [My Instagram page](https://www.instagram.com/nathalieutstumo/)
 
-[My Email]nathalie.utstumo@gmail.com
+Email: nathalie.utstumo@gmail.com
