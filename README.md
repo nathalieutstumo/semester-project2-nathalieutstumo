@@ -12,7 +12,7 @@ There are no dependencies necessary to run this project.
 
 - [Html]
 - [Scss]
-- [JavaScript]
+- [js]
 
 ## Getting Started
 
