@@ -52,8 +52,6 @@ If you’re unsure what JS file links to where, the scripts used for each page a
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
 [My Instagram page](https://www.instagram.com/nathalieutstumo/)
 
 Email: nathalie.utstumo@gmail.com
