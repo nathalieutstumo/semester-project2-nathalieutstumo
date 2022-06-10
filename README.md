@@ -1,6 +1,6 @@
 # Aloe skin - Semester project 2
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://i.postimg.cc/1nXDFgSh/Skjermbilde-2022-01-27-kl-13-05-28.png)
 
 ## Description
 
