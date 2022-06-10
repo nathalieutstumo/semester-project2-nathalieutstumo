@@ -10,9 +10,9 @@ Aloe Skin is an e-commerce website created for selling skin care products. The p
 
 There are no dependencies necessary to run this project.
 
-- [Html]
-- [Scss]
-- [js]
+- HTML
+- SCSS
+- JavaScript
 
 ## Getting Started
 
